@@ -38,8 +38,22 @@ student2 = Student.new({
   "house_id" => slytherin.id,
   "age" => 17
   })
+student3 = Student.new({
+  "first_name" => "Nil",
+  "second_name" => "Nilson",
+  "house_id" => ravenclaw.id,
+  "age" => 11
+  })
+student4 = Student.new({
+  "first_name" => "Sir George the First",
+  "second_name" => "of Clan George",
+  "house_id" => gryffindor.id,
+  "age" => 17
+  })
 student1.save()
 student2.save()
+student3.save()
+student4.save()
 
 
 binding.pry

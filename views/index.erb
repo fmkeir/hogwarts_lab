@@ -1,7 +1,14 @@
-<% for student in @students %>
-<p><b>First Name: </b><%= student.first_name %></p>
-<p><b>Second Name: </b><%= student.second_name %></p>
-<p><b>House: </b><%= student.house().house_name %></p>
-<p><b>Age: </b><%= student.age %></p>
-<hr />
+<% content_for :logo do %>
+  <%= @hogwarts_logo %>
+<% end %>
+
+<% content_for :content do %>
+  <% for student in @students %>
+  <p><b>First Name: </b><%= student.first_name %></p>
+  <p><b>Second Name: </b><%= student.second_name %></p>
+  <p><b>House: </b><%= student.house().house_name %></p>
+  <p><b>Age: </b><%= student.age %></p>
+  <a href="/students/<%= student.id %>" class="button">View student</a>
+  <hr />
+  <% end %>
 <% end %>

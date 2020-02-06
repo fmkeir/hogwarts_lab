@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="/main.css">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    <%= yield %>
+    <nav>
+      <img src="<%= yield_content :logo %>" alt="Hogwarts Crest">
+      <a href="/students">Students</a>
+      <a href="/students/new">Create</a>
+      <a href="#">Update</a>
+      <a href="#">Remove</a>
+    </nav>
+    <%= yield_content :content %>
   </body>
 </html>

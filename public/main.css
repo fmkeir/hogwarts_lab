@@ -1,0 +1,26 @@
+body {
+  display: flexbox;
+}
+
+.button {
+  border: 1px grey solid;
+  padding: 3px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: grey;
+}
+
+nav {
+  margin: 0;
+  font-size: 3rem;
+  padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav img {
+  max-height: 5rem;
+  max-width: auto;
+}
