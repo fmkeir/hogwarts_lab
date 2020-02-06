@@ -12,6 +12,7 @@ end
 
 get "/students/new" do
   @houses = House.all()
+  @hogwarts_logo = "https://www.freepnglogos.com/uploads/hogwarts-logo-png/hogwarts-logo-shadopro-deviantart-0.png"
   erb(:new)
 end
 
