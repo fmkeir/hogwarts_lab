@@ -9,9 +9,9 @@
   <label for="second_name" >Second Name: </label>
     <input type="text" name="second_name" id="second_name" />
   <label for="house_select">House</label>
-    <select id="house_select" name="house">
+    <select id="house_select" name="house_id">
       <% for house in @houses %>
-      <option value="<%= house.house_name %>"><%= house.house_name %></option>
+      <option value="<%= house.id %>"><%= house.house_name %></option>
       <% end %>
     </select>
   <label for="age" >Age: </label>

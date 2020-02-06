@@ -22,6 +22,7 @@ get "/students/:id" do
 end
 
 post "/students" do
-  Student.new(params).save()
+  @student = Student.new(params)
+  @student.save()
   erb(:create)
 end
