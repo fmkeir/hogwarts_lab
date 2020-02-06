@@ -1,6 +1,7 @@
 require('sinatra')
 require('sinatra/contrib/all')
 require_relative('./models/student')
+require_relative('./models/house')
 also_reload('./models/*')
 
 get "/students" do
@@ -9,6 +10,7 @@ get "/students" do
 end
 
 get "/students/new" do
+  @houses = House.all()
   erb(:new)
 end
 

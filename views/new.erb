@@ -5,10 +5,9 @@
     <input type="text" name="second_name" id="second_name" />
   <label for="house_select">House</label>
     <select id="house_select" name="house">
-      <option value="Gryffindor">Gryffindor</option>
-      <option value="Ravenclaw">Ravenclaw</option>
-      <option value="Slytherin">Slytherin</option>
-      <option value="Hufflepuff">Hufflepuff</option>
+      <% for house in @houses %>
+      <option value="<%= house.house_name %>"><%= house.house_name %></option>
+      <% end %>
     </select>
   <label for="age" >Age: </label>
     <input type="text" name="age" id="age" />
